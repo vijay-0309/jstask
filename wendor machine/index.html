@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+ <title>Reliance-Digital</title>
+ <script type="text/javascript" src="home.js"></script>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Reliance-Digital</h2>
+    </header>
+
+    <table class="choice">
+        <tr>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Asus-Laptop-Deals-Worth-Grabbing.jpg?context=bWFzdGVyfGltYWdlc3wzMTQwMnxpbWFnZS9qcGVnfGltYWdlcy9oZjIvaDJiLzk2ODA4NjkwOTc1MDIuanBnfDUwNTRmOGQ4NDBiZDUzNWUwN2NhZWQ0YWI5ZDg2NDA3M2JiNDIzYjAzNDVhNTk4ZTVhMmIzZmZkMDRmZDM4ZjE"> <br>
+                <input type="number" id="laptop" placeholder="Enter Quantity"> <br>
+                <button onclick="getPrice('laptop')">view-price</button> <br>
+                <h4 id="laptopvalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Kodak-32-HD-LED-TVs-Deals-Worth-Grabbing-Banner.jpg?context=bWFzdGVyfGltYWdlc3wyNjIxMnxpbWFnZS9qcGVnfGltYWdlcy9oYjQvaGNhLzk3MjYwMTM4OTg3ODIuanBnfGRlMTZlYzJmYzgyNGYxN2NhZjdkM2QzMWJiODYxZGM5MjlmOWQzYmY1OGY2NjExMDQ0NTIyNTE2MTRhMjMyNzc" > <br>
+                <input type="number"  id="tv" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('tv')">view-price</button><br>
+                <h4 id="tvvalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/OnePlus-EP-Bullets.jpg?context=bWFzdGVyfGltYWdlc3w1NDc0MXxpbWFnZS9qcGVnfGltYWdlcy9oYjUvaDZmLzk3MjU5NTE1NDEyNzguanBnfDM2MzExNjhhMjE3YmNjYjg2NGRiOWIwN2U5MTc0ZjE5YjRiN2YwOTdjY2NmMWFjODk3NzFkZWU0ZDBkZWVlYjM"><br>
+                <input type="number"  id="neckband" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('neckband')">view-price</button><br>
+                <h4 id="neckbandvalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Inalsa-Jazz-Pro-550-Watts-Mixer-Grinder-Deals-Worth-Grabbing.jpg?context=bWFzdGVyfGltYWdlc3wzMTE5MHxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDQ1Lzk2ODkyNDk2NDQ1NzQuanBnfGY4ZDFjNDhhZDNlMjQ1YzRjYWU3NTRhNWZkYWJjYmQ0NWJkZWM0ZDIxYWFiMjRlMmZmOWExZTEzYWM5N2Y2M2M"><br>
+                <input type="number"  id="mixer" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('mixer')">view-price</button><br>
+                <h4 id="mixervalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Printers-Best-Deals-on-Categories.jpg?context=bWFzdGVyfGltYWdlc3wyNDg2MHxpbWFnZS9qcGVnfGltYWdlcy9oYWYvaDRiLzk2OTI4NTU5OTIzNTAuanBnfDY0YzA4ZWI3ODg5MTBkNzg1ZWZmMDA1YzE1ZTVhZThiNDMyNmQ4OTMxOTBiYjdjZDE5Yjg0NjRhZGZkZDg1M2M"><br>
+                <input type="number"  id="printer" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('printer')">view-price</button><br>
+                <h4 id="printervalue"></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Hisense-Ref-Deals-Worth-Grabbing.jpg?context=bWFzdGVyfGltYWdlc3wyODI1MXxpbWFnZS9qcGVnfGltYWdlcy9oZjcvaDgyLzk2NzczODI1MTY3NjYuanBnfGUzYmE3N2FlZmE3ZDM0NDAxYTMzZmFmYTY3MGJiMGMzZjg4MDllYzdkMWE5YjFjZjk0OTkwMzE3NWU4ZmJjMTI" > <br>
+                <input type="number"  id="fridge" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('fridge')">view-price</button><br>
+                <h4 id="fridgevalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/LG-Washing-Machine-Deals-Worth-Grabbing.jpg?context=bWFzdGVyfGltYWdlc3wyNTg0NHxpbWFnZS9qcGVnfGltYWdlcy9oNGEvaGNjLzk2OTA1NTU4NzUzNTguanBnfGYyMzgwYzJkNGMwYjExMjE3YzE4ZTE3MGQwZGQ4YmJhMThkOGE1YzU4YmViNmMwMzVhYzIyM2FlNzQ5OGQ4Mjk"> <br>
+                <input type="number"  id="washingmachine" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('washingmachine')">view-price</button><br>
+                <h4 id="washingmachinevalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Itel-Vision-2s.jpg?context=bWFzdGVyfGltYWdlc3w2ODk5NnxpbWFnZS9qcGVnfGltYWdlcy9oMzYvaDZjLzk2OTI4NjgxODIwNDYuanBnfDUyZTJhOGVlZTIxZjA2NjAxN2QyNDhjYjI0NGZjNmIxOGQ1NmUyMWM2Yjg0ZGY4MDg3OTVlYzk0Nzc0NTZmNmQ"><br>
+                <input type="number"  id="mobile" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('mobile')">view-price</button><br>
+                <h4 id="mobilevalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Boat-Storm-Smartwatch-Deals-Worth-Grabbing.jpg?context=bWFzdGVyfGltYWdlc3wzMDU3MHxpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDY4Lzk2NzczODgzMTY3MDIuanBnfDAwZmU4MDU0YzgxZWY5NTU4MGY1ZTQ5YjVjZTZiMjFlYWM5Njg5NjMzODI4YzY2YWY4ZjdjY2YxMTRjZGQ0ZDI"><br>
+                <input type="number"  id="watch" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('watch')">view-price</button><br>
+                <h4 id="watchvalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Power-Bank-10000mah.jpg?context=bWFzdGVyfGltYWdlc3wzOTgxMHxpbWFnZS9qcGVnfGltYWdlcy9oYzYvaGY4Lzk2OTI4NjgyNDc1ODIuanBnfDFmNjRhMWMwY2I0MjcxODU3ZmU4YmMxYjVkZDk1OTE5ZTdkOGJkOGU3YmYzODFhYjBlOGYwMTkxMTUxOGJkNjM"><br>
+                <input type="number"  id="powerbank" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('powerbank')">view-price</button><br>
+                <h4 id="powerbankvalue"></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Reconnect-RHDIG1011N-Iron-491362225-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzOTUyMHxpbWFnZS9qcGVnfGltYWdlcy9oNzYvaDY1LzkzMjY5NDkwNDAxNTguanBnfDQ1Mjg1NjJmY2VlMGFhNTk3ODQ4NDVmMDBlMGE1NWQ5OGZiMWIwYTllNGQ4OWI5NmFiYzdiZDdjMWEzYWYzNTk"><br>
+                <input type="number"  id="ironbox" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('ironbox')">view-price</button><br>
+                <h4 id="ironboxvalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Reconnect-RHOTG1501-OTG-15-litres-491296863-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MTIyOXxpbWFnZS9qcGVnfGltYWdlcy9oM2MvaDU0Lzg5MzI3MzYxMDY1MjYuanBnfGYyODliYmE0ZDE4YjY3NGJlY2M1OGE5Nzg5MjFkYjJiNjk2ZjZlNmIzN2JkOTcxODNlZjA4OTk2MjRjNDNjYTk"> <br>
+                <input type="number"  id="oven" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('oven')">view-price</button><br>
+                <h4 id="ovenvalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Google-Home-Smart-Multimedia-Speaker-White-Grey-491378358-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDk4NXxpbWFnZS9qcGVnfGltYWdlcy9oYWUvaDhkLzg5MDMwNjYxODk4NTQuanBnfGNlZjczZTRmNzFmNGNlNTU4OTU3MDcxNzMzNjFmODg2NmMwYzcwOTY2OTY2NDM5YjMwNmM5MjQ5MzU4N2JhZTE"><br>
+                <input type="number"  id="assistant" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('assistant')">view-price</button><br>
+                <h4 id="assistantvalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Apple-WatchS4-44mm-GD-SS-Cs-S-S-Bnd-Cel-491488333-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjUyMXxpbWFnZS9qcGVnfGltYWdlcy9oYTMvaDczLzkwNTA2NTE4MjAwNjIuanBnfDFkN2U2NDY1YzMzMTFlM2I5ZGY5ZGQwZWU2OGQwOWQ3ZmJkMmUzNjgzZjZiNjE0ZmFhZGIwNTg5ZjA2MzJiNGU"><br>
+                <input type="number"  id="iwatch" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('iwatch')">view-price</button><br>
+                <h4 id="iwatchvalue"></h4>
+            </td>
+            <td>
+                <img src="https://www.reliancedigital.in/medias/Reconnect-1-8L-Rice-Cooker-2-bowls-491433397-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3NzgzMHxpbWFnZS9qcGVnfGltYWdlcy9oOTEvaDQzLzkzMjM1MjE5NjYxMTAuanBnfGViOWUwMDZiNzNlN2QwM2M3YjU0ZGRlY2EyY2U3YzI2NmVlM2U1MzRmYjZkNmEyYjllMzI3MTZjMGEyYjAwNjY"><br>
+                <input type="number"  id="cooker" placeholder="Enter Quantity"><br>
+                <button onclick="getPrice('cooker')">view-price</button><br>
+                <h4 id="cookervalue"></h4>
+            </td>
+        </tr>
+    </table>
+
+    
+</body>
+
+
+
+</html>
